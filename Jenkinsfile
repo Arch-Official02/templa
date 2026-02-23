@@ -3,11 +3,11 @@ pipeline {
 
     environment {
         EC2_USER = 'ec2-user'
-        EC2_HOST = '16.170.140.55'
-        PRIVATE_KEY_PATH = 'C:/Users/Success/Downloads/electricaa-key.pem'
+        EC2_HOST = '98.94.15.94'
+        PRIVATE_KEY_PATH = '"C:/Users/zeusa/Downloads/arch_dewi_jenkins_keypair.pem"'
         IMAGE_NAME = 'templa'
         IMAGE_TAG = "build-${env.BUILD_NUMBER}"
-        GIT_REPO = 'https://github.com/Success-C-Opara/electric-001.git'
+        GIT_REPO = 'https://github.com/Arch-Official02/templa.git'
         BRANCH_NAME = 'main'
         GIT_BASH = '"C:\\Program Files\\Git\\bin\\bash.exe" -c'
         DOCKERHUB_CREDENTIALS_ID = 'dockerhub-creds'
@@ -67,3 +67,4 @@ pipeline {
         }
     }
 }
+
